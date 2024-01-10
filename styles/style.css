@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3d3d3d;
+    background-color: #fff;
+}
+
+.limitar-secao {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-topo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.link-logo {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.link-logo span {
+    color: #6592c9;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 12px;
+}
+
+.nav-bar a:hover {
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.banner {
+    background-image: url("../assets/img-fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #0a9077b3;
+    font-size: 28px;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.descricao-conteudo {
+    padding: 50px 0;
+}
+
+.container-iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.descricao-conteudo h2 {
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.descricao-conteudo p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.quartos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card-quarto {
+    width: calc((100% / 3) - 20px);
+    max-width: 500px;
+    flex: 1 250px;
+    border-bottom: 2px solid #3d3d3d;
+
+}
+
+.card-quarto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-quarto a {
+    text-decoration: none;
+}
+
+.card-quarto p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding: 15px 0;
+}
+
+.informacao-da-pousada {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 40px 20px;
+}
+
+.card-info {
+    min-width: 400px;
+    max-width: 48%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #bbb;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px #00000041;
+}
+
+.info-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.card-info img {
+    width: 170px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+}
+
+.rodape {
+    background-color: #49997d;
+    color: #fff;
+}
+
+.container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+
+.contato {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.contato img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.contato a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-rodape h4 {
+    font-size: 22px;
+}
+
+.container-copyright {
+    border-top: 1px solid #666;
+    font-weight: 600;
+}
+
+.container-contato {
+    display: flex;
+}
+
+@media (max-width: 932px) {
+    .card-info {
+        max-width: 90%;
+
+    }
+
+    .card-info img {
+        width: 220px;
+        height: 213px;
+    }
+    
+    .container-contato {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 540px) {
+    .topo {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-bar {
+        border-top: 1px solid #3d3d3d;
+    }
+
+    .card-info {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+        min-width: 300px;
+    }
+
+    .card-info img {
+        width: 100%;
+        height: 223px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .info-conteudo {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 95%;
+        height: 200px;
+    }
+}
